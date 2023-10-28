@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0%;
+            padding:0%;
+            background-color: aliceblue;
+        }
+        div{
+            height:480px;
+            width: 400px;
+            background-color: white;
+            position: relative;
+            top: 100px;
+            left: 550px;
+            border-radius: 4px; 
+        }
+        h1{
+            font-size:30px;
+            position: absolute;
+            left: 12px;
+            font-weight: bolder;
+            color:black;
+            text-shadow: 4px 4px 4px skyblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #A{
+            position: absolute;
+            top:80px;
+            left: 15px;
+           color: skyblue;
+            font-weight: bold;
+            font-size:20px;
+        } 
+        #a{
+            position: absolute;
+            top:100px;
+        }
+        #B
+        {
+            position: absolute;
+            top:170px;
+            left:15px;
+            color: skyblue;
+            font-weight: bold;
+            font-size:20px;
+        }
+        #b{
+            position: absolute;
+            top:190px;
+        }
+        #C
+       {
+            position: absolute;
+            top:265px;
+            left: 15px;
+            color: skyblue;
+            font-weight: bold;
+            font-size:20px;
+        }
+        #c{
+            position: absolute;
+            top:285px;
+        } 
+        #D
+        {
+            position: absolute;
+            top:350px;
+            left:15px;
+            color: skyblue;
+            font-weight: bold;
+            font-size:20px;
+        }
+        #d{
+            position: absolute;
+            top:375px;
+        }
+        #E{
+            height: 35px;
+            width: 100px;
+            background-color:skyblue;
+            border-radius: 4px;
+            border: none;
+            position: relative;
+            top: 305px;
+            left: 8px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"]{
+            height: 35px;
+            width: 47vh;
+            margin:10px;
+            padding-left:5px;
+            border: none;
+            border-radius:4px;
+            background-color:rgba(192, 192, 192, 0.175);
+        }
+        #button{
+                height:28px;
+                width:60px;
+                background-color:white;
+                position: absolute;
+                color:black;
+                border-radius: 4px;
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                padding-top:4px; 
+                top: 700px;
+                left: 1410px;
+            }
+            #button:hover{
+                background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));
+            }
+        hr{
+            position: absolute;
+            top: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Search your Destination</h1>
+        <hr width="100%">
+        <form action="">
+            <label id="A">Location</label><br>
+            <input id="a" type="text" placeholder="You Want to Visit"><br>
+            <label id="B">Guest Members</label><br>
+            <input id="b" type="number" placeholder="Number of People"><br>
+            <label id="C">Arrival</label><br>
+            <input id="c" type="date"><br>
+            <label id="D">Leaving</label><br>
+            <input id="d" type="date">
+            <input id="E" type="button" value="Search">
+        </form>
+    </div>
+    <a href="/GoTourNow/index.html" id="button">BACK</a>
+</body>
+</html>

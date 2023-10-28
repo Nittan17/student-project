@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+        }
+        .container{
+            background-color: aliceblue;
+            height: 780px;
+            width: 1480px;
+        }
+        h1{
+            font-size: 65px;
+            text-shadow:4px 4px 4px skyblue;
+            position: absolute;
+            left:580px;
+            line-height: 80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .a{
+            height:240px;
+            width: 240px;
+            background-color:white;
+            position: absolute;
+            left: 40px;
+            top: 150px;
+            box-shadow: 3px 3px 3px;
+            border-radius: 4px;
+        }
+        .b{
+            height:240px;
+            width: 240px;
+            background-color: white;
+            position: absolute;
+            left: 520px;
+            top: 150px;
+            box-shadow: 3px 3px 3px;
+            border-radius: 4px;
+        }
+        .c{
+            height:240px;
+            width: 240px;
+            background-color: white;
+            position: absolute;
+            left: 1000px;
+            top: 150px;
+            box-shadow: 3px 3px 3px;
+            border-radius: 4px;
+        }
+        .d{
+            height:240px;
+            width: 240px;
+            background-color:white;
+            position: absolute;
+            left: 40px;
+            top: 450px;
+            box-shadow: 3px 3px 3px;
+            border-radius: 4px;
+        }
+        .e{
+            height:240px;
+            width: 240px;
+            background-color: white;
+            position: absolute;
+            left: 520px;
+            top: 450px;
+            box-shadow: 3px 3px 3px;
+            border-radius: 4px;
+        }
+        .f{
+            height:240px;
+            width: 240px;
+            background-color: white;
+            position: absolute;
+            left: 1000px;
+            top: 450px;
+            box-shadow: 3px 3px 3px;
+            border-radius: 4px;
+        }
+        .a:hover{
+            background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));
+        }
+        .b:hover{
+            background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));
+        }
+        .c:hover{
+            background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));
+        }
+        .d:hover{
+            background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));
+        }
+        .e:hover{
+            background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));s
+        }
+        .f:hover{
+            background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));
+        }
+        img{
+            position: relative;
+            top: 25px;
+            left: 45px;
+            border-radius: 4px;
+        }
+        h2{
+            position: absolute;
+            top: 160px;
+            left: 50px;
+        } 
+        p{
+            position: absolute;
+            top: 190px;
+            left: 45px;
+            color: gray;
+        }
+        #A{
+            height:220px;
+            width: 210px;
+            background-color:skyblue;
+            position: absolute;
+            left: 295px;
+            top: 160px;
+            box-shadow: 2px 2px 2px;
+            border-radius: 4px;
+        }
+        #B{
+            height:220px;
+            width: 210px;
+            background-color:skyblue;
+            position: absolute;
+            left: 775px;
+            top: 160px;
+            box-shadow: 2px 2px 2px;
+            border-radius: 4px;
+        }
+        #C{
+            height:220px;
+            width: 210px;
+            background-color:skyblue;
+            position: absolute;
+            left: 1250px;
+            top: 160px;
+            box-shadow: 2px 2px 2px;
+            border-radius: 4px;
+        }
+        #D{
+            height:220px;
+            width: 210px;
+            background-color:skyblue;
+            position: absolute;
+            left: 295px;
+            top: 460px;
+            box-shadow: 2px 2px 2px;
+            border-radius: 4px;
+        }
+        #E{
+            height:220px;
+            width: 210px;
+            background-color:skyblue;
+            position: absolute;
+            left: 775px;
+            top: 460px;
+            box-shadow: 2px 2px 2px;
+            border-radius: 4px;
+        }
+        #F{
+            height:220px;
+            width: 210px;
+            background-color:skyblue;
+            position: absolute;
+            left: 1250px;
+            top: 460px;
+            box-shadow: 2px 2px 2px;
+            border-radius: 4px;
+        }
+        #button{
+                height:28px;
+                width:60px;
+                background-color:white;
+                position: absolute;
+                color:black;
+                border-radius: 4px;
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                padding-top:4px; 
+                top: 700px;
+                left: 1410px;
+            }
+            #button:hover{
+                background: linear-gradient(rgba(192, 192, 192, 0.749),rgba(255, 255, 255, 0.826),rgba(192, 192, 192, 0.616));
+            }
+            .qutos{
+                position: absolute;
+                top: 0px;
+                left: 2px;
+                color:black;
+                text-shadow: 3px 3px 3px white;
+            }
+    </style>
+</head>
+<body>
+    <h1>GALLERY</h1>
+    <div class="container">
+         <div class="a"> 
+            <img src="/pictures/khajiar.jpeg" alt="" height="150px" width="150px">
+            <h2>India</h2>
+            <p>Dalhousie</p>
+         </div>
+           <div id="A"><p class="qutos">India's tourism offers a vibrant tapestry of rich history,diverse cultures, stunning landscapes, and architectural marvels. From the majestic Taj Mahal to the serene backwaters of Kerala, India beckons travelers with its enchanting spirituality, delectable cuisine, and warm hospitality. A treasure trove of unforgettable experiences. </p></div>
+       <div class="b">
+             <img src="/pictures/paris.jpeg" alt="" height="150p" width="150px">
+             <h2>France</h2>
+            <p>Paris</p>
+        </div>
+            <div id="B">
+                <p class="qutos">Paris, the capital of France, is a treasure trove of tourism delights. Marvel at the Eiffel Tower's majestic splendor, wander through the Louvre Museum's vast art collection, and savor mouthwatering pastries in quaint cafes.Paris captivates with its romantic ambiance and rich cultural heritage.</p></div>
+        <div class="c">
+             <img src="/pictures/lima.jpeg" alt="" height="150px" width="150px">
+             <h2>Peru</h2>
+             <p>Lima</p>
+        </div>
+            <div id="C">
+                <p class="qutos">Peru, a land of ancient wonders, entices with its diverse landscapes and rich history. Explore the awe-inspiring Machu Picchu, venture into the Amazon rainforest's vibrant depths, and immerse yourself in the vibrant culture of Cusco. Peru offers unforgettable adventures for every traveler.</p></div>
+       <div class="d">
+            <img src="/pictures/grecce.jpg" alt="" height="150px" width="150px">
+            <h2>Grecce</h2>
+            <p>Paros</p>
+        </div>
+            <div id="D"><p class="qutos">Paros, a charming Greek island in the Cyclades, enchants visitors with its pristine beaches, quaint villages, and rich history. Explore the iconic Parikia Old Town, wander through the scenic fishing villages, and soak up the vibrant atmosphere while enjoying the island's delicious cuisine.</p></div>
+       <div class="e">
+            <img src="/pictures/bali1.jpeg" alt="" height="150px" width="150px">
+            <h2>Indonesia</h2>
+            <p>Bali</p>
+        </div>
+             <div id="E"><p class="qutos">Bali, Indonesia's tropical paradise, captivates travelers with its stunning beaches, lush rice terraces, and vibrant culture. Dive into crystal-clear waters, visit ancient temples. From the serene Ubud to the lively Seminyak, Bali offers a magical blend of relaxation, adventure, and beauty.</p></div>
+        <div class="f">
+        <img src="/pictures/dubai.jpeg" alt="" height="150px" width="150px">
+        <h2>UAE</h2>
+        <p>Dubai</p>
+       </div>
+          <div id="F"><p class="qutos">Dubai, a gleaming metropolis in the United Arab Emirates, dazzles visitors with its futuristic architecture, luxurious shopping, and vibrant nightlife. Experience the thrill of desert safaris, admire the iconic Burj Khalifa, and relax on stunning beaches. Dubai promises a blend of opulence, adventure, and cultural exploration.</p>
+          </div>
+       </div>
+       <a href="/GoTourNow/index.html" id="button">BACK</a>
+</body>
+</html>
